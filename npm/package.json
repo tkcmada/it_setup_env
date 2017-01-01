@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    ,"tsc": "node node_modules/typescript/lib/tsc.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^15.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.4"
   }
 }
