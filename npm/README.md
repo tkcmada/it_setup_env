@@ -25,3 +25,8 @@ npm install typescript --save-dev
 ```
 so, javascript library will be added to package.json and installed into node_modules
 
+How to compile TypeScript
+-------------------------
+```
+node node_modules/typescript/lib/tsc.js hello.ts
+```
