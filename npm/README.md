@@ -1,6 +1,13 @@
+How to setup npm environment
+----------------------------
+
+download [LTS(Long term support) version of node.js for Windows](https://nodejs.org/en/download/) and install it. This installer can install npm as well.
+
 How to use npm
 --------------
 
++ launch command prompt
++ go to this directory(npm)
 + initially setup(run only once at first time)
 ```
 npm init
