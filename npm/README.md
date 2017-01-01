@@ -1,10 +1,18 @@
-How to install Javascript library
----------------------------------
+How to use npm
+--------------
 
-+ run this command
++ initially setup(run only once at first time)
 ```
-(move to this npm directory)
-npm init (run only this command once at first time)
+npm init
+```
++ How to download and install locally Javascript libraries following package.json
+```
+npm install
+```
+
+How to add Javascript library to package.json
+----------------------------------------------
+```
 npm install react --save
 ```
-+ so, javascript library will be installed into node_modules
+so, javascript library will be added to package.json and installed into node_modules
