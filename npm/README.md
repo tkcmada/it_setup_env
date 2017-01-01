@@ -38,3 +38,8 @@ How to compile TypeScript
 node node_modules/typescript/lib/tsc.js hello.ts
 node hello.js
 ```
+OR, you can run by the following command because "tsc" alias is added to scripts section in package.json.
+```
+npm run tsc hello.ts
+node hello.js
+```
