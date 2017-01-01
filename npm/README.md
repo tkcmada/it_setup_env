@@ -36,4 +36,5 @@ How to compile TypeScript
 -------------------------
 ```
 node node_modules/typescript/lib/tsc.js hello.ts
+node hello.js
 ```
