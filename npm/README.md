@@ -16,3 +16,12 @@ How to add Javascript library to package.json
 npm install react --save
 ```
 so, javascript library will be added to package.json and installed into node_modules
+
+
+How to add Javascript library to package.json as development tool
+-----------------------------------------------------------------
+```
+npm install typescript --save-dev
+```
+so, javascript library will be added to package.json and installed into node_modules
+
