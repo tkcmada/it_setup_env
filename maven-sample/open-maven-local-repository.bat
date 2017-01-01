@@ -1,0 +1,1 @@
+start %USERPROFILE%\.m2
