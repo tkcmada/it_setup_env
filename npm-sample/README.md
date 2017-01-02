@@ -1,10 +1,7 @@
 How to setup development environment
 ------------------------------------
 
-+ install cygwin x64 with following packages.
-  + GNU make
-  + python3
-  + curl
++ install cygwin x64 following [cygwin-sample](../cygwin-sample/README.md).
 + download [LTS(Long term support) version of node.js for Windows](https://nodejs.org/en/download/) and install it. This installer can install npm as well.
 
 How to use npm
