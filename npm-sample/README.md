@@ -12,7 +12,7 @@ How to setup npm environment
 How to use npm
 --------------
 
-+ run "it_setup_env/start_bash.sh" to launch cygwin bash ( DO NOT use Windows command prompt )
++ launch cygwin bash ( DO NOT use Windows command prompt )
 ```
 it_setup_env/npm-sample/start_bash.sh
 ```
