@@ -25,7 +25,8 @@ How to add Javascript library to package.json
 npm install typescript --save
 npm install typescript --save-dev
 ```
-so, javascript library will be added to package.json and installed into node_modules
+so, javascript library will be added to package.json and installed into node_modules.
+Do not install by -g (global) command as development tools should be specified in devDevendencies(--save-dev) in package.json.
 
 How to build
 ------------
@@ -52,7 +53,7 @@ Considering npm package
 
 DO NOT install these npm package !
 ----------------------------------
-+ task runner( grunt, gulp, webpack, jake, etc...) : DO NOT use these task runner. Learn GNU make at first.
++ task runner( grunt, gulp, webpack, jake, etc...) : These tools are just task runner and not smarter than GNU make. Learn GNU make at first.
   + https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/
   + http://qiita.com/sasaplus1/items/e7579bb774acf54629ac
 + GNU make document for reference
