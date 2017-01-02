@@ -4,13 +4,13 @@
   "description": "This project offers default package dependencies.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    ,"tsc": "node node_modules/typescript/lib/tsc.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "node node_modules/typescript/lib/tsc.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.4.1"
+    "slickgrid": "^2.3.3"
   },
   "devDependencies": {
     "typescript": "^2.1.4"
