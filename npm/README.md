@@ -1,18 +1,22 @@
 How to setup npm environment
 ----------------------------
 
-download [LTS(Long term support) version of node.js for Windows](https://nodejs.org/en/download/) and install it. This installer can install npm as well.
++ install cygwin x64 with following packages.
+  + GNU make
++ download [LTS(Long term support) version of node.js for Windows](https://nodejs.org/en/download/) and install it. This installer can install npm as well.
 
 How to use npm
 --------------
 
-+ launch bash ( not command prompt ) by it_setup_env/start_bash.sh
-+ go to this directory(npm)
-+ initially setup(run only once at first time)
++ run "it_setup_env/start_bash.sh" to launch cygwin bash ( DO NOT use Windows command prompt )
 ```
-npm init
+it_setup_env/start_bash.sh
 ```
-+ How to download and install locally Javascript libraries following package.json
++ go to this directory
+```
+it_setup_env $ cd npm
+```
++ install locally Javascript libraries following package.json
 ```
 npm install
 ```
@@ -32,35 +36,34 @@ npm install typescript --save-dev
 ```
 so, javascript library will be added to package.json and installed into node_modules
 
-How to compile TypeScript
--------------------------
+How to build
+------------
 ```
-node node_modules/typescript/lib/tsc.js hello.ts
-node hello.js
-```
-OR, you can run by the following command because "tsc" alias is added to scripts section in package.json.
-```
-npm run tsc hello.ts
-node hello.js
+make clean
+make
 ```
 
 Installed npm package
 ---------------------
 
 + typescript : Type-safe javascript.
++ babel, babel-cli : transpiler from ES6 to ES5
 + slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid. ( this comes with jQuery...)
   + https://github.com/6pac/SlickGrid/wiki
 
 Considering npm package
 -----------------------
 
-+ babel : transpiler from ES6 to ES5
 + vue : ViewModel binding framework. ( Alternative is knockout.js which supports IE6-11)
 + browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
 
 DO NOT install these npm package !
 ----------------------------------
-+ grunt, gulp, webpack : DO NOT use these task runner. If you want to use these task runner, you must be able to write plugin to extend task runners.
++ task runner( grunt, gulp, webpack, jake, etc...) : DO NOT use these task runner. Learn GNU make at first.
+  + https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/
+  + http://qiita.com/sasaplus1/items/e7579bb774acf54629ac
++ GNU make document for reference
+  + http://www.02.246.ne.jp/~torutk/cxx/make/gnumake.html
 
 Links
 -----
