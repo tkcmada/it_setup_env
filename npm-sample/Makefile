@@ -2,8 +2,8 @@
 SRC=$(wildcard src/*.ts)
 LIB=$(SRC:src/%.ts=lib/%.js)
 #TODO:20170131:please set .bin directory to PATH
-BABEL=./node_modules/.bin/babel
-TSC=./node_modules/.bin/tsc
+BABEL=babel
+TSC=tsc
 
 #first target is default target. so "lib" is default target.
 lib: $(LIB)
