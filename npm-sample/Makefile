@@ -1,6 +1,6 @@
 #$(wildcard [pattern [pattern]...]) is built-in function of make
 SRC=$(wildcard src/*.ts)
-LIB=$(SRC:src/%.ts=lib/%.js)
+LIB=$(SRC:src/%.ts=target/js/%.js)
 #TODO:20170131:please set .bin directory to PATH
 BABEL=babel
 TSC=tsc
@@ -9,11 +9,11 @@ TSC=tsc
 lib: $(LIB)
 
 #pattern rule can be written by "%". "%" is file basename.
-lib/%.js: src/%.ts
+target/js/%.js: src/%.ts
 	#$(@D) is target directory
 	mkdir -p $(@D)
-	#$@ is target file name(so lib/xxx.js)
-	#$< is first dependency file.(so src/xxx.ts)
+	#$@ is target file name
+	#$< is first dependency file
 	$(TSC) $< --out $@
 
 lib/%.js: src/%.es6 .babelrc
@@ -21,7 +21,7 @@ lib/%.js: src/%.es6 .babelrc
 	$(BABEL) $< -o $@
 
 #this target run lib/hello.js and outputs "hello world"
-run_hello: lib/hello.js
+run: target/js/hello.js
 	node $<
 
 .PHONY: var
@@ -32,5 +32,5 @@ var:
 
 .PHONY: clean
 clean:
-	rm -f lib/*.js
+	rm -rf target
 
