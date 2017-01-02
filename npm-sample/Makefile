@@ -4,16 +4,19 @@ LIB=$(SRC:src/main/ts/%.ts=target/js/%.js)
 #TODO:20170131:please set .bin directory to PATH
 TSC=tsc
 
+#first target is default target. so "help" is default target.
 .PHONY: help
 help:
 	@echo "Usage : make <task>"
 	@echo "<task>:"
-	@echo "  lib : transpile typescript to ES5 library"
-	@echo "  run : transpile javascript lib and run hello.js"
-	@echo "  var : print variable values for debug"
+	@echo "  build    transpile typescript to ES5 library"
+	@echo "  watch    run 'make build' every 1 second"
+	@echo "  run      build and run hello.js"
+	@echo "  var      print variable values for debug"
 
-#first target is default target. so "lib" is default target.
-lib: $(LIB)
+#left side is target, right side is dependent files
+.PHONY: build
+build: $(LIB)
 
 #pattern rule can be written by "%". "%" is file basename.
 target/js/%.js: src/main/ts/%.ts
@@ -26,6 +29,12 @@ target/js/%.js: src/main/ts/%.ts
 run: target/js/hello.js
 	node $<
 
+watch:
+	@echo "Now running 'make build' every 1 second. Press Ctrl-C to exit."
+	@while true; do make build --silent; sleep 1; done
+	#inotifywait doesn't work in cygwin
+	#while true; do make build; inotifywait -qre close_write .; done
+    
 # "make var" prints variable values
 .PHONY: var
 var:
