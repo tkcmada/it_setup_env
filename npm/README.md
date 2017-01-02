@@ -48,14 +48,16 @@ Installed npm package
 ---------------------
 
 + typescript : Type-safe javascript.
-+ slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid.
++ slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid. ( this comes with jQuery...)
+  + https://github.com/6pac/SlickGrid/wiki
++ browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
 
 Considering npm package
 -----------------------
 
 + babel : transpiler from ES6 to ES5
 + vue : ViewModel binding framework.
-+ knockout : ViewModel binding framework. This supports IE6-11.
++ knockout : Altenative ViewModel binding framework. This supports IE6-11.
 
 DO NOT install these npm package !
 ----------------------------------
