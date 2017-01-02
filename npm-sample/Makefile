@@ -2,8 +2,15 @@
 SRC=$(wildcard src/main/ts/*.ts)
 LIB=$(SRC:src/main/ts/%.ts=target/js/%.js)
 #TODO:20170131:please set .bin directory to PATH
-BABEL=babel
 TSC=tsc
+
+.PHONY: help
+help:
+	@echo "Usage : make <task>"
+	@echo "<task>:"
+	@echo "  lib : transpile typescript to ES5 library"
+	@echo "  run : transpile javascript lib and run hello.js"
+	@echo "  var : print variable values for debug"
 
 #first target is default target. so "lib" is default target.
 lib: $(LIB)
@@ -16,19 +23,15 @@ target/js/%.js: src/main/ts/%.ts
 	#$< is first dependency file
 	$(TSC) $< --out $@
 
-lib/%.js: src/%.es6 .babelrc
-	mkdir -p $(@D)
-	$(BABEL) $< -o $@
-
-#this target run lib/hello.js and outputs "hello world"
 run: target/js/hello.js
 	node $<
 
 # "make var" prints variable values
 .PHONY: var
 var:
-	@echo SRC is $(SRC)
-	@echo LIB is $(LIB)
+	@echo "SRC is $(SRC)"
+	@echo "LIB is $(LIB)"
+	@echo "PATH is $(PATH)"
 
 .PHONY: clean
 clean:

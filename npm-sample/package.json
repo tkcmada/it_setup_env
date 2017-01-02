@@ -4,8 +4,7 @@
   "description": "This project offers default package dependencies.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "node node_modules/typescript/lib/tsc.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +12,6 @@
     "slickgrid": "^2.3.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-env": "^1.1.4",
     "typescript": "^2.1.4"
   }
 }
