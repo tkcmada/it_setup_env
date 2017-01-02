@@ -34,6 +34,7 @@ How to build
 ```
 make clean
 make
+make run
 ```
 
 Installed npm package
