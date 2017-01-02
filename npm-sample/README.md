@@ -10,11 +10,7 @@ How to use npm
 
 + run "it_setup_env/start_bash.sh" to launch cygwin bash ( DO NOT use Windows command prompt )
 ```
-it_setup_env/start_bash.sh
-```
-+ go to this directory
-```
-it_setup_env $ cd npm
+it_setup_env/npm-sample/start_bash.sh
 ```
 + install locally Javascript libraries following package.json
 ```
@@ -24,14 +20,7 @@ npm install
 How to add Javascript library to package.json
 ----------------------------------------------
 ```
-npm install react --save
-```
-so, javascript library will be added to package.json and installed into node_modules
-
-
-How to add Javascript library to package.json as development tool
------------------------------------------------------------------
-```
+npm install typescript --save
 npm install typescript --save-dev
 ```
 so, javascript library will be added to package.json and installed into node_modules
