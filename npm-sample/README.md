@@ -1,18 +1,16 @@
-How to setup npm environment
-----------------------------
+How to setup development environment
+------------------------------------
 
 + install cygwin x64 with following packages.
   + GNU make
   + python3
-  + perl
-  + wget
   + curl
 + download [LTS(Long term support) version of node.js for Windows](https://nodejs.org/en/download/) and install it. This installer can install npm as well.
 
 How to use npm
 --------------
 
-+ run "it_setup_env/start_bash.sh" to launch cygwin bash ( DO NOT use Windows command prompt )
++ launch cygwin bash ( DO NOT use Windows command prompt )
 ```
 it_setup_env/npm-sample/start_bash.sh
 ```
@@ -32,8 +30,9 @@ so, javascript library will be added to package.json and installed into node_mod
 How to build
 ------------
 ```
+make help
 make clean
-make
+make lib
 make run
 ```
 
@@ -41,7 +40,6 @@ Installed npm package
 ---------------------
 
 + typescript : Type-safe javascript.
-+ babel, babel-cli : transpiler from ES6 to ES5
 + slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid. ( this comes with jQuery...)
   + https://github.com/6pac/SlickGrid/wiki
 
@@ -50,6 +48,7 @@ Considering npm package
 
 + vue : ViewModel binding framework. ( Alternative is knockout.js which supports IE6-11)
 + browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
++ babel, babel-cli : transpiler from ES6 to ES5( but there is typescript )
 
 DO NOT install these npm package !
 ----------------------------------
