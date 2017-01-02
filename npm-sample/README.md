@@ -32,7 +32,7 @@ How to build
 ```
 make help
 make clean
-make lib
+make build
 make run
 ```
 
