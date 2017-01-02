@@ -50,18 +50,17 @@ Installed npm package
 + typescript : Type-safe javascript.
 + slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid. ( this comes with jQuery...)
   + https://github.com/6pac/SlickGrid/wiki
-+ browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
 
 Considering npm package
 -----------------------
 
 + babel : transpiler from ES6 to ES5
-+ vue : ViewModel binding framework.
-+ knockout : Altenative ViewModel binding framework. This supports IE6-11.
++ vue : ViewModel binding framework. ( Alternative is knockout.js which supports IE6-11)
++ browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
 
 DO NOT install these npm package !
 ----------------------------------
-+ grunt , gulp : DO NOT use these task runner. Instead, go for make on bash.
++ grunt, gulp, webpack : DO NOT use these task runner. If you want to use these task runner, you must be able to write plugin to extend task runners.
 
 Links
 -----
