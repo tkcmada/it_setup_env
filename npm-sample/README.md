@@ -40,7 +40,6 @@ Installed npm package
 ---------------------
 
 + typescript : Type-safe javascript.
-+ babel, babel-cli : transpiler from ES6 to ES5
 + slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid. ( this comes with jQuery...)
   + https://github.com/6pac/SlickGrid/wiki
 
@@ -49,6 +48,7 @@ Considering npm package
 
 + vue : ViewModel binding framework. ( Alternative is knockout.js which supports IE6-11)
 + browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
++ babel, babel-cli : transpiler from ES6 to ES5( but there is typescript )
 
 DO NOT install these npm package !
 ----------------------------------
