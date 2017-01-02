@@ -30,8 +30,9 @@ so, javascript library will be added to package.json and installed into node_mod
 How to build
 ------------
 ```
+make help
 make clean
-make
+make lib
 make run
 ```
 
