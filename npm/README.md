@@ -64,11 +64,11 @@ Considering npm package
 
 DO NOT install these npm package !
 ----------------------------------
-+ grunt, gulp, webpack : DO NOT use these task runner. If you want to use these task runner, you must be able to write plugin to extend task runners.
-+ jake is make-like build tool. If you go for jake, you just go for make.
-+ Conclusion are make or "npm run".
++ grunt, gulp, webpack, jake : DO NOT use these task runner. These task tools looks simple but it requires many plugin. You must be able to write plugin if you start using these task runner. Instead of wasting time to learn these task runner, learn only make.
   + https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/
   + http://qiita.com/sasaplus1/items/e7579bb774acf54629ac
++ GNU make document for reference
+  + http://www.02.246.ne.jp/~torutk/cxx/make/gnumake.html
 
 Links
 -----
