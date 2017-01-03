@@ -37,7 +37,14 @@ make run
 Installed npm package
 ---------------------
 
-+ typescript : Type-safe javascript.
++ typescript : Type-safe javascript. To transpile ts file to js file, run following task.
+```
+make build
+```
++ tslint : lint for TypeScript. To run tslint,
+```
+make lint
+```
 + slickgrid : Grid table library. Original slickgrid is suspended. This is 6pack version of slickgrid. ( this comes with jQuery...)
   + https://github.com/6pac/SlickGrid/wiki
 
