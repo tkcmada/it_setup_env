@@ -9,7 +9,7 @@ How to use npm
 
 + launch cygwin bash ( DO NOT use Windows command prompt )
 ```
-it_setup_env/npm-sample/start_bash.sh
+start_bash.sh
 ```
 + install locally Javascript libraries following package.json
 ```
