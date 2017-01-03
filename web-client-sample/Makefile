@@ -11,6 +11,7 @@ help:
 	@echo "<task>:"
 	@echo "  build    transpile typescript to ES5 library"
 	@echo "  watch    run 'make build' every 1 second"
+	@echo "  lint     execute tslint"
 	@echo "  run      build and run hello.js"
 	@echo "  var      print variable values for debug"
 
@@ -26,7 +27,7 @@ target/js/%.js: src/main/ts/%.ts
 	#$< is first dependency file
 	$(TSC) $< --out $@
 
-.PHONY lint
+.PHONY: lint
 lint:
 	tslint -c tslint.json src/main/ts/*.ts
 
