@@ -12,6 +12,7 @@
     "slickgrid": "^2.3.3"
   },
   "devDependencies": {
+    "tslint": "^4.2.0",
     "typescript": "^2.1.4"
   }
 }

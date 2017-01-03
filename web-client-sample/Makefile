@@ -26,6 +26,10 @@ target/js/%.js: src/main/ts/%.ts
 	#$< is first dependency file
 	$(TSC) $< --out $@
 
+.PHONY lint
+lint:
+	tslint -c tslint.json src/main/ts/*.ts
+
 run: target/js/hello.js
 	node $<
 
