@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.rap.tools.feature"
+      label="RAP Tools"
+      version="3.0.2.20160209-0600"
+      provider-name="Eclipse.org - RAP">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="Remote Application Platform (RAP) 3.0 Tools Repository" url="http://download.eclipse.org/rt/rap/tools/3.0/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.pde.ui"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.ui.intro"/>
+      <import plugin="org.eclipse.ui.intro.universal"/>
+      <import plugin="org.eclipse.ui.cheatsheets"/>
+      <import plugin="org.eclipse.pde.core"/>
+      <import plugin="org.eclipse.ant.core"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.rap.doc"
+         download-size="4349"
+         install-size="17283"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.intro"
+         download-size="41"
+         install-size="68"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.intro.source"
+         download-size="31"
+         install-size="54"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.templates"
+         download-size="58"
+         install-size="109"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.templates.source"
+         download-size="31"
+         install-size="74"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.launch"
+         download-size="64"
+         install-size="128"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.launch.source"
+         download-size="37"
+         install-size="100"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.launch.rwt"
+         download-size="128"
+         install-size="254"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.tools.launch.rwt.source"
+         download-size="74"
+         install-size="174"
+         version="3.0.2.20160122-1334"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.webapp"
+         download-size="114"
+         install-size="251"
+         version="9.2.13.v20150730"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.xml"
+         download-size="50"
+         install-size="107"
+         version="9.2.13.v20150730"
+         unpack="false"/>
+
+</feature>
