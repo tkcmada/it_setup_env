@@ -7,8 +7,11 @@ How to install plugins into Eclipse
 + install plugins.
 + commit and push this working tree.
 
+Base Eclipse
+------------
++ eclipse-rcp-mars-2-win32-x86_64
+
 Installed plugins
 -----------------
-
-+ eclipse-rcp-mars-2-win32-x86_64
++ ...
 
