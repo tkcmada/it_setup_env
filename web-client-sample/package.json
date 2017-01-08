@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.20.0",
-    "slickgrid": "^2.3.3"
+    "slickgrid": "^2.3.3",
+    "vue": "^2.1.8"
   },
   "devDependencies": {
     "tslint": "^4.2.0",
