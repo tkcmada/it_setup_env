@@ -2,7 +2,7 @@
 SRC=$(wildcard src/main/ts/*.ts)
 LIB=$(SRC:src/main/ts/%.ts=target/js/%.js)
 #TODO:20170131:please set .bin directory to PATH
-TSC=tsc
+TSC=tsc --lib "es5,es2015.promise,dom"
 
 #first target is default target. so "help" is default target.
 .PHONY: help

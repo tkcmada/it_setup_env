@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-        "outFile": "./node_modules/typescript/lib/tsc.js"
-    },
-    "exclude": [
-        "node_modules"
-    ]
-}
