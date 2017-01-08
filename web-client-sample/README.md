@@ -54,7 +54,7 @@ Considering npm package
 -----------------------
 
 + vue : ViewModel binding framework. ( Alternative is knockout.js which supports IE6-11)
-+ browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
++ browserify or webpack : allow client-side html to use require like node.js ( this comes with many dependencies... )
 + babel, babel-cli : transpiler from ES6 to ES5( but there is typescript ) babel can transpile experimental features but DO NOT use any stage-x features by babel.
 
 DO NOT install these npm package !
