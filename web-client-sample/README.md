@@ -41,6 +41,8 @@ Installed npm package
 ```
 make build
 ```
++ babel-polyfill : This is required to use Promise in IE11. (And async feature of Typescript requires Promise)
+
 + tslint : lint for TypeScript. To run tslint,
 ```
 make lint
@@ -53,11 +55,11 @@ Considering npm package
 
 + vue : ViewModel binding framework. ( Alternative is knockout.js which supports IE6-11)
 + browserify : allow client-side html to use require like node.js ( this comes with many dependencies... )
-+ babel, babel-cli : transpiler from ES6 to ES5( but there is typescript )
++ babel, babel-cli : transpiler from ES6 to ES5( but there is typescript ) babel can transpile experimental features but DO NOT use any stage-x features by babel.
 
 DO NOT install these npm package !
 ----------------------------------
-+ task runner( grunt, gulp, webpack, jake, etc...) : These tools are just task runner and not smarter than GNU make. Learn GNU make at first.
++ task runner( grunt, gulp, jake, etc...) : These tools are just task runner and not smarter than GNU make.
   + https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/
   + http://qiita.com/sasaplus1/items/e7579bb774acf54629ac
 + GNU make document for reference
