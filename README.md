@@ -7,3 +7,5 @@ This project manages projects which download necessary library of npm, maven, et
 + [docker-sample](docker-sample/README.md) This project manages Dockerfile to build docker images.
 + [vagrant-sample](vagrant-sample/README.md) This project manages vagrant file to create VirtualBox images.
 + [eclipse](eclipse/README.md) This project manages Eclipse image.
+
+packaged file should be uploaded to [here](https://1drv.ms/f/s!AgvpOgKTlBU_iUEuPUJkdqSLzdJk).
