@@ -2,15 +2,13 @@
 
 cd %~dp0
 
-IF "%JAVA_HOME%" == "" (
-  echo Please set JAVA_HOME beforehand.
-  pause
-  exit 1
-)
+call setenv.bat
 
-set MAVEN_OPTS=-Xms32m -Xmx1000m
-mvn -e -X compile
+@rem call is require to prevent window from closing.
+call mvn -e -X compile
 IF ERRORLEVEL 1 (
+  @echo error occured
   pause
   exit 1
 )
+pause

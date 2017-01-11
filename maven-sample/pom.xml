@@ -68,6 +68,7 @@
 </dependency>
 -->
 
+<!--
 <dependency>
 	<groupId>org.hibernate</groupId>
 	<artifactId>hibernate-entitymanager</artifactId>
@@ -633,7 +634,6 @@
 	<version>2.4.3</version>
 </dependency>
 
-<!--
 <dependency>
 	<groupId>net.openhft</groupId>
 	<artifactId>chronicle</artifactId>
@@ -669,7 +669,6 @@
 	<artifactId>chronicle-bytes</artifactId>
 	<version>1.7.18</version>
 </dependency>
--->
 
 
 <dependency>
@@ -900,13 +899,11 @@
 	<version>5.1</version>
 </dependency>
 
-<!--
 <dependency>
 	<groupId>org.dasein</groupId>
 	<artifactId>dasein-cloud-vsphere</artifactId>
 	<version>2015.06.4</version>
 </dependency>
--->
 
 <dependency>
 	<groupId>org.dasein</groupId>
@@ -956,7 +953,7 @@
 	<version>5.0</version>
 </dependency>
 
-
+-->
 
   </dependencies>
 </project>
