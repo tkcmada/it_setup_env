@@ -1,15 +1,9 @@
-How to setup development environment
-------------------------------------
-
-+ install cygwin x64 following [cygwin-sample](../cygwin-sample/README.md).
-+ download [LTS(Long term support) version of node.js for Windows](https://nodejs.org/en/download/) and install it. This installer can install npm as well.
-
-How to use npm
---------------
-
-+ launch cygwin bash ( DO NOT use Windows command prompt )
+How to use npm to download Javascript library
+---------------------------------------------
++ open command prompt
++ set PATH to nodejs ( TO do this automatically, you can use start_cmd.bat )
 ```
-start_bash.sh
+set PATH=nodejs;%PATH%
 ```
 + install locally Javascript libraries following package.json
 ```
@@ -24,6 +18,12 @@ npm install typescript --save-dev
 ```
 so, javascript library will be added to package.json and installed into node_modules.
 Do not install by -g (global) command as development tools should be specified in devDevendencies(--save-dev) in package.json.
+
+How to setup build environment
+------------------------------
+
++ clone this repository.
++ install cygwin x64 following [stdenv-cygwin](https://github.com/tkcmada/stdenv_cygwin) project.
 
 How to build
 ------------
