@@ -8,8 +8,8 @@
   <name>maven-sample</name>
   <url>http://maven.apache.org</url>
 
-<!--
  <repositories>
+<!--
     <repository>
         <id>GlassFish</id>
         <name>GlassFish Maven Repository</name>
@@ -27,8 +27,14 @@
         <url>http://download.java.net/maven/2/</url>
         <layout>default</layout>
     </repository>
-</repositories> 
 -->
+    <repository>
+        <id>Grails Plugin</id>
+        <name>Grails Plugin Repository</name>
+        <url>https://repo.grails.org/grails/plugins/</url>
+        <layout>default</layout>
+    </repository>
+</repositories> 
 
     <build>
         <plugins>
@@ -46,8 +52,6 @@
     </build>
 
   <dependencies>
-
- 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -55,11 +59,88 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    <groupId>org.msgpack</groupId>
-    <artifactId>msgpack</artifactId>
-    <version>0.6.12</version>
+      <groupId>org.msgpack</groupId>
+      <artifactId>msgpack</artifactId>
+      <version>0.6.12</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.msgpack</groupId>
+      <artifactId>msgpack</artifactId>
+      <version>0.6.12</version>
+    </dependency>
+    
+    <!-- for grails project -->
+    <dependency>
+      <groupId>org.grails</groupId>
+      <artifactId>grails-datastore-test-support</artifactId>
+      <version>1.0.2-grails-2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>tomcat</artifactId>
+      <version>7.0.55</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>scaffolding</artifactId>
+      <version>2.1.2</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>cache</artifactId>
+      <version>1.1.8</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>asset-pipeline</artifactId>
+      <version>2.1.5</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>hibernate4</artifactId>
+      <version>4.3.8.1</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>database-migration</artifactId>
+      <version>1.4.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>jquery</artifactId>
+      <version>1.11.1</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.0.7</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>2.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>release</artifactId>
+      <version>3.0.1</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>rest-client-builder</artifactId>
+      <version>1.0.3</version>
+      <type>zip</type>
+    </dependency>
 <!--
 <dependency>
 	<groupId>ojdbc</groupId>
