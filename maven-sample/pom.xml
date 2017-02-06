@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>mycompany</groupId>
-  <artifactId>maven-sample</artifactId>
+  <artifactId>it_setup_env</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>maven-sample</name>
@@ -32,9 +32,15 @@
         <id>Grails Plugin</id>
         <name>Grails Plugin Repository</name>
         <url>https://repo.grails.org/grails/plugins/</url>
-        <layout>default</layout>
     </repository>
 </repositories> 
+<pluginRepositories>
+    <pluginRepository>
+        <id>Grails Plugin</id>
+        <name>Grails Plugin Repository</name>
+        <url>https://repo.grails.org/grails/plugins/</url>
+    </pluginRepository>
+</pluginRepositories>
 
     <build>
         <plugins>
@@ -57,11 +63,6 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.msgpack</groupId>
-      <artifactId>msgpack</artifactId>
-      <version>0.6.12</version>
     </dependency>
     <dependency>
       <groupId>org.msgpack</groupId>
