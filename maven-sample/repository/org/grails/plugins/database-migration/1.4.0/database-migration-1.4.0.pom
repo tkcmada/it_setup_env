@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>database-migration</artifactId>
+  <packaging>zip</packaging>
+  <version>1.4.0</version>
+  <name>Grails Database Migration Plugin</name>
+  <description>Grails Database Migration Plugin</description>
+  <url>http://grails-plugins.github.io/grails-database-migration/</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <organization>
+    <name>Pivotal</name>
+    <url>http://www.gopivotal.com/oss</url>
+  </organization>
+  <developers>
+    <developer>
+      <name>Burt Beckwith</name>
+      <email>burt@burtbeckwith.com</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://jira.grails.org/browse/GPDATABASEMIGRATION</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/grails-plugins/grails-database-migration</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <version>2.0.5</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>easymockclassextension</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>ant</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>spring</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>

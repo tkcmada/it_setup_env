@@ -5,7 +5,8 @@ cd %~dp0
 call setenv.bat
 
 @rem call is require to prevent window from closing.
-call mvn -e -X compile
+@rem call mvn -e -X compile
+call mvn dependency:go-offline
 IF ERRORLEVEL 1 (
   @echo error occured
   pause
