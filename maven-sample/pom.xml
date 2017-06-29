@@ -60,6 +60,24 @@
   <dependencies>
 
 <dependency>
+    <groupId>de.ruedigermoeller</groupId>
+    <artifactId>fst</artifactId>
+    <version>2.50</version>
+</dependency>
+
+<dependency>
+    <groupId>de.ruedigermoeller</groupId>
+    <artifactId>fst</artifactId>
+    <version>2.48-jdk-6</version>
+</dependency>
+
+<dependency>
+    <groupId>de.ruedigermoeller</groupId>
+    <artifactId>fst</artifactId>
+    <version>1.63</version>
+</dependency>
+
+<dependency>
     <groupId>net.sf.trove4j</groupId>
     <artifactId>trove4j</artifactId>
     <version>3.0.3</version>
