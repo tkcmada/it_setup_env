@@ -954,6 +954,30 @@
 </dependency>
 
 <dependency>
+    <groupId>net.openhft</groupId>
+    <artifactId>zero-allocation-hashing</artifactId>
+    <version>0.8</version>
+</dependency>
+
+<dependency>
+    <groupId>net.openhft</groupId>
+    <artifactId>affinity</artifactId>
+    <version>3.1.0</version>
+</dependency>
+
+<dependency>
+    <groupId>net.openhft</groupId>
+    <artifactId>affinity</artifactId>
+    <version>2.2</version>
+</dependency>
+
+<dependency>
+    <groupId>net.openhft</groupId>
+    <artifactId>affinity</artifactId>
+    <version>3.0.6</version>
+</dependency>
+
+<dependency>
 	<groupId>net.openhft</groupId>
 	<artifactId>chronicle-map</artifactId>
 	<version>3.10.1</version>
@@ -962,7 +986,25 @@
 <dependency>
 	<groupId>net.openhft</groupId>
 	<artifactId>chronicle-map</artifactId>
-	<version>3.1.3-alpha</version>
+	<version>3.6.4</version>
+</dependency>
+
+<dependency>
+	<groupId>net.openhft</groupId>
+	<artifactId>chronicle-map</artifactId>
+	<version>3.5.3</version>
+</dependency>
+
+<dependency>
+	<groupId>net.openhft</groupId>
+	<artifactId>chronicle-map</artifactId>
+	<version>3.4.4</version>
+</dependency>
+
+<dependency>
+	<groupId>net.openhft</groupId>
+	<artifactId>chronicle-map</artifactId>
+	<version>2.0.3</version>
 </dependency>
 
 <dependency>
@@ -980,7 +1022,19 @@
 <dependency>
 	<groupId>net.openhft</groupId>
 	<artifactId>chronicle-bytes</artifactId>
-	<version>1.7.18</version>
+	<version>1.7.36</version>
+</dependency>
+
+<dependency>
+	<groupId>net.openhft</groupId>
+	<artifactId>chronicle-bytes</artifactId>
+	<version>1.8.5</version>
+</dependency>
+
+<dependency>
+    <groupId>net.openhft</groupId>
+    <artifactId>chronicle-queue</artifactId>
+    <version>4.5.27</version>
 </dependency>
 
 
