@@ -9,31 +9,13 @@
   <url>http://maven.apache.org</url>
 
  <repositories>
-<!--
-    <repository>
-        <id>GlassFish</id>
-        <name>GlassFish Maven Repository</name>
-        <url>http://download.java.net/maven/glassfish/</url>
-    </repository>
-    <repository>
-        <id>java.net.m1repo</id>
-        <name>java.net Maven 1 Repository</name>
-        <url>http://download.java.net/maven/1/</url>
-        <layout>legacy</layout>
-    </repository>
-    <repository>
-        <id>java.net.m2repo</id>
-        <name>java.net Maven 2 Repository</name>
-        <url>http://download.java.net/maven/2/</url>
-        <layout>default</layout>
-    </repository>
--->
     <repository>
         <id>Grails Plugin</id>
         <name>Grails Plugin Repository</name>
         <url>https://repo.grails.org/grails/plugins/</url>
     </repository>
 </repositories> 
+
 <pluginRepositories>
     <pluginRepository>
         <id>Grails Plugin</id>
@@ -58,6 +40,31 @@
     </build>
 
   <dependencies>
+
+<dependency>
+    <groupId>org.glassfish.jersey.core</groupId>
+    <artifactId>jersey-server</artifactId>
+    <version>2.26</version>
+</dependency>
+
+<dependency>
+    <groupId>org.glassfish.jersey.core</groupId>
+    <artifactId>jersey-common</artifactId>
+    <version>2.26</version>
+</dependency>
+
+<dependency>
+    <groupId>org.glassfish.jersey.core</groupId>
+    <artifactId>jersey-client</artifactId>
+    <version>2.26</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-server</artifactId>
+    <version>9.4.8.v20171121</version>
+</dependency>
 
 <dependency>
     <groupId>de.ruedigermoeller</groupId>
